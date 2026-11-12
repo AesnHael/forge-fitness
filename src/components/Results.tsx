@@ -29,7 +29,7 @@ export function Results() {
           <dl className="mt-12 grid grid-cols-3 gap-px bg-line">
             {resultStats.map((s, i) => (
               <Reveal key={s.label} delay={0.1 * i} className="bg-iron py-5 pr-4">
-                <dd className="display text-[clamp(2.4rem,5vw,4rem)] text-volt">
+                <dd className="display whitespace-nowrap text-[clamp(1.9rem,5vw,4rem)] text-volt">
                   {s.prefix}
                   <Counter to={s.value} suffix={s.suffix} />
                 </dd>
